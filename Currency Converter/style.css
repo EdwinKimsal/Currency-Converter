@@ -1,3 +1,9 @@
+*{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 #background{
     top: 0;
     left: 0;
