@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head -->
+
+<head>
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Body -->
+
+<body id="background">
+    <header id="header">
+        <p id="newValue">Your new value is:</p>
+    </header>
+
+    <main id="main">
+
+        <br><br>
+
+        <form>
+            <label>Amount of current currency:</label>
+            <br>
+            <input type="text" id="amount" name="amount">
+        </form>
+
+        <br><br>
+
+        <label>Current currency:</label>
+        <br>
+        <select id="currentCurrency">
+            <option id="NA" value="none"></option>
+            <option id="$"value="AUD">AUD ($)</option>
+            <option id="$"value="CAD">CAD ($)</option>
+            <option id="€" value="EUR">EUR (€)</option>
+            <option id="£" value="GBP">GBP (£)</option>
+            <option id="¥" value="JPY">JPY (¥)</option>
+            <option id="$" value="USD">USD ($)</option>
+        </select>
+
+        <br><br><br>
+
+        <label>New currency:</label>
+        <br>
+        <select id="newCurrency">
+            <option id="NA" value="none"></option>
+            <option id="$"value="AUD">AUD ($)</option>
+            <option id="$"value="CAD">CAD ($)</option>
+            <option id="€" value="EUR">EUR (€)</option>
+            <option id="£" value="GBP">GBP (£)</option>
+            <option id="¥" value="JPY">JPY (¥)</option>
+            <option id="$" value="USD">USD ($)</option>
+        </select>
+
+        <br><br><br>
+
+        <input id="button" type="submit" onclick="convert()" value="Convert" name="">
+
+    </main>
+
+
+    <script src="code.js"></script>
+</body>
+
+</html>
